@@ -1,4 +1,4 @@
-FROM g-zwgc3422-docker.pkg.coding.net/docker/image/python:3.10
+FROM python:3.10
 
 # 设置工作目录
 WORKDIR /app
