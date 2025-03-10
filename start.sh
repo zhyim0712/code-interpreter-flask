@@ -1,0 +1,1 @@
+gunicorn -t 600 -w 24 --max-requests 10 --max-requests-jitter 10 --bind 0.0.0.0:8000 --access-logfile /dev/stdout --error-logfile /dev/stderr --threads 20 app:app
