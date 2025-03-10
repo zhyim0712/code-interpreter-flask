@@ -4,7 +4,7 @@
 ```bash
 curl --location --request POST 'https://codeinterpreter:8000' \
 --header 'Content-Type: application/json' \
---data {
+--data '{
   "code": "print('Hello, World!')",
   "files": ["https://file_url.docx"],
   "session": "会话id，用于存储本次请求的变量，下次对话可以直接使用",
@@ -17,7 +17,7 @@ curl --location --request POST 'https://codeinterpreter:8000' \
     "REDIS_LOCATION": "",
     "REDIS_PASSWORD": "",
   }
-}
+}'
 ```
 #### config说明
 - 用户会问一些敏感信息，所以这些信息不能存储到代码中，需要通过config传递
